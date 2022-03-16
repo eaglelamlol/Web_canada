@@ -22,16 +22,14 @@
     <label for="height">
       Height :
     </label>
-    <input type="number" id="height" ref="height">
+    <input type="number" id="height" ref="height"  @input="sum()" >
 
 
     <label for="weight">
       Weight :
     </label>
-    <input type="number" id="weight" ref="weight">
+    <input type="number" id="weight" ref="weight"  @input="sum()" >
 
-    <br><br>
-    <input type="button" value="Calculate"  id="Validate" @click="sum()" >
 
     <br><br>
     <div class="result">{{current || 0}}</div>
@@ -54,6 +52,7 @@ export default {
   data(){
     return{
       current :'',
+      currents :'',
     }
   },
   methods : {

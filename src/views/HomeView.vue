@@ -16,7 +16,10 @@
   <ul>
 
     <li v-for="value in results">
-      {{ value }}
+        {{value.id }}
+        {{value.name }}
+        {{value.username }}
+        {{value.email }}
     </li>
 
 
